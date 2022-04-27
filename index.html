@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation with Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container flex mx-auto items-center justify-center min-h-screen">
+        <div class="form-field lg:w-1/3 w-full shadow-lg p-8 rounded-md">
+            <div class="header mb-14">
+                <img src="logo.svg" alt="logo" class="mb-6 m-auto w-5/12">
+                <h1 class="header text-4xl text-center font-bold text-gray-600">
+                    Registration Form
+                </h1>
+            <p class="text-center pt-2">Kindly Fill the form with the required details</p>
+            </div>
+            <div>
+                <form action="success.html" method="post">
+                    <div class="form-control mt-3">
+                        <span class="text-gray-700">User name</span> <br>
+                        <input type="text" class="form-input border-solid border-2 border-gray-600 mt-2 block w-full rounded-md shadow-sm py-2 px-4" name="username" id="username" placeholder="Enter your Username" required />
+                    </div>
+                    <div class="form-control mt-3">
+                        <span class="text-gray-700">Email Address</span> <br>
+                        <input type="email" class="form-input border-solid border-2 border-gray-600 mt-2 block w-full rounded-md shadow-sm py-2 px-4" name="username" id="email" placeholder="Enter your Email Address" required />
+                    </div>
+                    <div class="form-control mt-3">
+                        <span class="text-gray-700">Password</span> <br>
+                        <input type="password" class="form-input border-solid border-2 border-gray-600 mt-2 block w-full rounded-md shadow-sm py-2 px-4" name="username" id="password" placeholder="Enter your password" required />
+                    </div>
+                    <div class="form-control mt-14">
+                        <input type="submit" class=" border-solid border-2 text-fuchsia-50 bg-green-600 mt-2 block w-full rounded-md shadow-sm py-3 px-4" name="username" value="Register" required />
+                    </div>  
+                </form>
+            </div>
+        </div>
+      </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
